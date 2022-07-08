@@ -19,6 +19,14 @@ class Character extends CCSprite
 		addAnimIndices('idle1-alt', 'Phil Idle', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(0, 0));
 		addAnim('death-alt', 'Phil Vanishes', false, new FlxPoint(359, 61));
 
+		addAnimIndices('idle0-fred', 'fred idle', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(87, 17));
+		addAnimIndices('idle1-fred', 'fred idle', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(87, 17));
+
+		addAnimIndices('idle0-fred-alt', 'momazos diego', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(40, -13));
+		addAnimIndices('idle1-fred-alt', 'momazos diego', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(40, -13));
+
+		addAnim('death-fred-alt', 'momazos tween', false, new FlxPoint(15, -14));
+
 		animation.finishCallback = function(anim:String)
 		{
 			if (anim == 'death-alt')
@@ -32,7 +40,12 @@ class Character extends CCSprite
 	{
 		if (philDied)
 			return;
-		playAnim('idle${danceCount}${phil ? '-alt' : ''}', true);
+		var postfix:String = '';
+		if (MenuState.fredTrolling >= 25)
+			postfix += '-fred';
+		if (phil)
+			postfix += '-alt';
+		playAnim('idle${danceCount}${postfix}', true);
 		if (change)
 			danceCount = danceCount == 0 ? 1 : 0;
 	}

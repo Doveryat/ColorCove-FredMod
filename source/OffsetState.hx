@@ -14,10 +14,10 @@ class OffsetState extends FlxState
 	public var debugSpr:CCSprite;
 
 	// edit these; ghost is the bg, debug is the sprite you're offsetting
-	public var ghostAnim:String = "static";
+	public var ghostAnim:String = "idle1";
 	public var debugIndex:Int = 1;
 
-	public static var debugAnims:Array<String> = ['static', 'press', 'revive', 'die'];
+	public static var debugAnims:Array<String> = ['idle0-fred-alt','idle1-fred-alt','death-fred-alt'];
 
 	public var debugAnim:String = debugAnims[1];
 
@@ -28,12 +28,22 @@ class OffsetState extends FlxState
 	public function getSpr(?x:Float = 0, ?y:Float = 0)
 	{
 		// feel free to edit the animations as you need
-		var newSpr = new CCSprite(x, y, 'Options Arrows');
-		newSpr.addAnim('static', 'Option Arrow Static0', false, new FlxPoint(0, 0));
-		newSpr.addAnim('press', 'Option Arrow Press0', false, new FlxPoint(42, 0));
-		newSpr.addAnim('revive', 'Option Arrow Revive0', false, new FlxPoint(0, 0));
-		newSpr.addAnim('die', 'Option Arrow Die0', false, new FlxPoint(0, 0));
-		newSpr.flipX = true;
+		var newSpr = new CCSprite(x, y, 'Characters');
+		newSpr.addAnimIndices('idle0', 'Nicholas Idle', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(0, 0));
+		newSpr.addAnimIndices('idle1', 'Nicholas Idle', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(0, 0));
+		newSpr.addAnim('death', 'Nicholas zDead', false, new FlxPoint(7, 60));
+		newSpr.addAnimIndices('idle0-alt', 'Phil Idle', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(0, 0));
+		newSpr.addAnimIndices('idle1-alt', 'Phil Idle', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(0, 0));
+		
+		newSpr.addAnim('death-alt', 'Phil Vanishes', false, new FlxPoint(359, 61));
+
+		newSpr.addAnimIndices('idle0-fred', 'fred idle', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(87, 17));
+		newSpr.addAnimIndices('idle1-fred', 'fred idle', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(87, 17));
+		
+		newSpr.addAnimIndices('idle0-fred-alt', 'momazos diego', [0, 1, 2, 3, 4, 5, 6, 7, 8], false, new FlxPoint(40, -13));
+		newSpr.addAnimIndices('idle1-fred-alt', 'momazos diego', [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], false, new FlxPoint(40, -13));
+
+		newSpr.addAnim('death-fred-alt', 'momazos tween', false, new FlxPoint(15, -14));
 		return newSpr;
 	}
 

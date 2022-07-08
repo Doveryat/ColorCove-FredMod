@@ -246,7 +246,12 @@ class PlayState extends FlxState
 					difficulty += 0.5;
 					var scorePlus = i.speed * (i.x - 750) / 25;
 					score += scorePlus;
-					i.playAnim('death-alt', true);
+					var postfix:String = '';
+					if (MenuState.fredTrolling >= 25)
+					postfix += '-fred';
+					if (i.phil)
+					postfix += '-alt';
+					i.playAnim('death${postfix}', true);
 					popupText(i.getGraphicMidpoint().x, i.getGraphicMidpoint().y, Std.int(scorePlus));
 					musicBox.playSound('kill', 0.5);
 				}

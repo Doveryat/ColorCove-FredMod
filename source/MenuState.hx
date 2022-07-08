@@ -143,13 +143,21 @@ class MenuState extends FlxState
 					musicBox.playSound('OW MY EARS', 1.25);
 					menuTitle.playAnim('fred 3am', true);
 					FlxG.mouse.load(Paths.image('fred'), 0.1, -25, -25);
-					fredTrolling = 20;
 				}
-				else if (fredTrolling < 10)
+				else if (fredTrolling == 25)
+					{
+						camGame.shake();
+						musicBox.playSound('printer', 1.5);
+						new FlxTimer().start(10, function(tmr:FlxTimer) {musicBox.playSound('ping', 1.5);});
+						new FlxTimer().start(15, function(tmr:FlxTimer) {musicBox.playSound('ping', 1.5);});
+						new FlxTimer().start(20, function(tmr:FlxTimer) {musicBox.playSound('ping', 1.5);});
+						new FlxTimer().start(25, function(tmr:FlxTimer) {musicBox.playSound('ping', 1.5);});
+					}
+				else
 				{
-					fredTrolling++;
 					musicBox.playSound('le tap', 1);
 				}
+				fredTrolling++;
 			}
 
 		#if debug
