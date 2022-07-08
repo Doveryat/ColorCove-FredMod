@@ -15,8 +15,8 @@
 
 # ColorCove Fred Mod
 
-* Note: This is a mod of [Color Cove by DillyzThe1](https://github.com/DillyzThe1/ColorCove)!<br/>
 [![](https://img.shields.io/github/downloads/Doveryat/ColorCove-FredMod/total.svg)](../../releases) [![](https://img.shields.io/github/v/release/Doveryat/ColorCove-FredMod)](../../releases/latest) [![](https://img.shields.io/github/repo-size/Doveryat/ColorCove-FredMod)](../../archive/refs/heads/main.zip)<br/>
+<i>Note: This is a mod of [Color Cove by DillyzThe1](https://github.com/DillyzThe1/ColorCove)!</i><br/>
 A colorful game across the side of a street.<br/>
 Your goal is to get the boring monochrome outliers to stop trying to make it boring!<br/>
 
