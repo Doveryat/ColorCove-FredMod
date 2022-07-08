@@ -7,19 +7,22 @@
 <p align="center">
   Originally made for a mini-jam hosted by <a href="https://matthew-schlauderaff.itch.io/">Matthew Schlauderaff</a>.
 </p>
+<p align="center">
+  Fred Mod by <a href="https://github.com/Doveryat/">Zarzok</a>.
+</p>
 
 
 
-# ColorCove
+# ColorCove Fred Mod
 
-[![](https://img.shields.io/github/downloads/DillyzThe1/Colorcove/total.svg)](../../releases) [![](https://img.shields.io/github/v/release/DillyzThe1/ColorCove)](../../releases/latest) [![](https://img.shields.io/github/repo-size/DillyzThe1/ColorCove)](../../archive/refs/heads/main.zip)<br/>
+* Note: This is a mod of [Color Cove by DillyzThe1](https://github.com/DillyzThe1/ColorCove)!<br/>
+[![](https://img.shields.io/github/downloads/Doveryat/ColorCove-FredMod/total.svg)](../../releases) [![](https://img.shields.io/github/v/release/Doveryat/ColorCove-FredMod)](../../releases/latest) [![](https://img.shields.io/github/repo-size/Doveryat/ColorCove-FredMod)](../../archive/refs/heads/main.zip)<br/>
 A colorful game across the side of a street.<br/>
-Your goal is to get the boring monochrome outliers to stop trying to make it boring!
+Your goal is to get the boring monochrome outliers to stop trying to make it boring!<br/>
 
 ## How To Play
 
-For windows builds, go [here](https://github.com/DillyzThe1/ColorCove/releases) & download the zip.<br/>
-For (semi-mobile-compatible) web builds, go to [this link](https://dillyzthe1.github.io/ColorCoveWebBuild/) instead.
+For windows builds, go [here](https://github.com/Doveryat/ColorCove-FredMod/releases) & download the zip.<br/>
 
 You can click/tap any UI element you need, but you also have some standard controls:<br/>
 * Escape (Exiting a menu/popup)<br/>
@@ -38,7 +41,7 @@ And some unique ones for debug builds:<br/>
 <br/>
 Download Haxe [4.2.4 64-bit](https://haxe.org/download/file/4.2.4/haxe-4.2.4-win64.exe/) or [4.2.4 32-bit](https://haxe.org/download/file/4.2.4/haxe-4.2.4-win.exe/).
 <br/>
-Download the [source code of this repository](https://www.github.com/DillyzThe1/ColorCove/archive/refs/heads/main.zip) or the [source code of the latest release](https://www.github.com/DillyzThe1/ColorCove/releases/latest).
+Download the [source code of this repository](https://www.github.com/Doveryat/ColorCove-FredMod/archive/refs/heads/main.zip) or the [source code of the latest release](https://www.github.com/DillyzThe1/ColorCove/releases/latest).
 <br/>
 Extract the zip file and open the folder.<br/>
 Run setup.bat and let it automatically install.<br/>
